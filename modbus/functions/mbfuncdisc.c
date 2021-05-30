@@ -28,8 +28,14 @@
  */
 
 /* ----------------------- System includes ----------------------------------*/
-#include "stdlib.h"
-#include "string.h"
+#if defined(_CARIBOU_RTOS_)
+    #include <caribou.h>
+    #include <caribou/lib/string.h>
+    #define assert( expr )
+#else
+    #include "stdlib.h"
+    #include "string.h"
+#endif
 
 /* ----------------------- Platform includes --------------------------------*/
 #include "port.h"
