@@ -1,6 +1,6 @@
 # ** FREEMODBUS
 # SRC_FREEMODBUS=${ENV_FREEMODBUS_ROOT}
-SRC_LIBMODBUS=${SRC_ROOT}/freemodbus
+SRC_FREEMODBUS=${SRC_ROOT}/freemodbus/modbus
 
 INC += 	-I $(SRC_FREEMODBUS) 			\
 		-I $(SRC_FREEMODBUS)/include 	\
